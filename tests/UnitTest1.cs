@@ -22,7 +22,7 @@ namespace tests
             driver.Navigate().GoToUrl("http://34.65.204.180/");
             By titleSelector = By.CssSelector("h1");
             IWebElement title = driver.FindElement(titleSelector);
-            Assert.Equal("Hello, world!", title.Text);
+            Assert.Equal("Test failure", title.Text);
         }
     }
 }
